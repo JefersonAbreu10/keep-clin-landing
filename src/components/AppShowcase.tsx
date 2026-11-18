@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { asset } from "@/config/site";
 import styled from "styled-components";
 import { FiCheck } from "react-icons/fi";
 import { Container, Section, Eyebrow, H2, Lead, GradText } from "./ui";
@@ -16,9 +17,9 @@ const modules = [
 ];
 
 const screens = [
-  { src: "/img/app-inicio.webp", alt: "Tela inicial do app Keep Clin com as consultas do dia", label: "Início" },
-  { src: "/img/app-conversas.webp", alt: "Tela de conversas do app Keep Clin com mensagens do WhatsApp e Instagram", label: "Conversas" },
-  { src: "/img/app-indicadores.webp", alt: "Tela de indicadores do app Keep Clin com gráfico e metas do mês", label: "Indicadores" },
+  { src: asset("/img/app-inicio.webp"), alt: "Tela inicial do app Keep Clin com as consultas do dia", label: "Início" },
+  { src: asset("/img/app-conversas.webp"), alt: "Tela de conversas do app Keep Clin com mensagens do WhatsApp e Instagram", label: "Conversas" },
+  { src: asset("/img/app-indicadores.webp"), alt: "Tela de indicadores do app Keep Clin com gráfico e metas do mês", label: "Indicadores" },
 ];
 
 const Grid = styled(Container)`

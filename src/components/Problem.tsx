@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { asset } from "@/config/site";
 import styled from "styled-components";
 import { FiGrid, FiMessageCircle, FiClock, FiTrendingDown } from "react-icons/fi";
 import { Container, Section, Eyebrow, H2, Lead } from "./ui";
@@ -96,7 +97,7 @@ export function Problem() {
       <Grid>
         <Photo>
           <Image
-            src="/img/mesa-bagunca.webp"
+            src={asset("/img/mesa-bagunca.webp")}
             alt="Mesa de recepção cheia de papéis, cadernos e planilhas"
             fill
             sizes="(min-width: 1080px) 450px, 1px"

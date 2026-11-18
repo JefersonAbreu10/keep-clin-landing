@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { asset } from "@/config/site";
 import styled from "styled-components";
 import { FiUserCheck, FiZap, FiSmartphone } from "react-icons/fi";
 import { Container, Section, Eyebrow, H2, Lead, SectionHead, GradText } from "./ui";
@@ -10,21 +11,21 @@ const pillars = [
     Icon: FiUserCheck,
     title: "Atendente humana da nossa equipe",
     text: "Cuida do atendimento, das ligações e dos pacientes. Você não contrata nem treina.",
-    img: "/img/atendente-recepcao.webp",
+    img: asset("/img/atendente-recepcao.webp"),
     alt: "Atendente da Keep Clin de braços cruzados na recepção da clínica",
   },
   {
     Icon: FiZap,
     title: "Inteligência artificial e automação",
     text: "Confirmações, lembretes, cadastros e acompanhamento rodam sozinhos.",
-    img: "/img/atendente-notebook.webp",
+    img: asset("/img/atendente-notebook.webp"),
     alt: "Atendente trabalhando no notebook com ferramentas de automação",
   },
   {
     Icon: FiSmartphone,
     title: "Um aplicativo só da sua clínica",
     text: "Tudo o que hoje está em planilhas passa a viver num só lugar.",
-    img: "/img/atendente-ligacao.webp",
+    img: asset("/img/atendente-ligacao.webp"),
     alt: "Atendente em ligação com painel de indicadores na tela",
   },
 ];

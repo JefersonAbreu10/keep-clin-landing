@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { FiArrowDown, FiCheckCircle, FiCpu, FiBell } from "react-icons/fi";
 import { Container, ButtonPrimary, ButtonGhost, GradText } from "./ui";
 import { SocialButtons } from "./SocialButtons";
-import { whatsappUrl } from "@/config/site";
+import { whatsappUrl, asset } from "@/config/site";
 
 const float = keyframes`
   0%, 100% { transform: translateY(0); }
@@ -238,7 +238,7 @@ export function Hero() {
     <Wrap id="inicio">
       <div className="bg" aria-hidden>
         <Image
-          src="/img/atendente.webp"
+          src={asset("/img/atendente.webp")}
           alt=""
           fill
           priority
@@ -280,7 +280,7 @@ export function Hero() {
           <Ring aria-hidden />
           <PhotoFrame>
             <Image
-              src="/img/atendente.webp"
+              src={asset("/img/atendente.webp")}
               alt="Atendente da Keep Clin sorrindo, usando headset, pronta para atender os pacientes"
               fill
               priority

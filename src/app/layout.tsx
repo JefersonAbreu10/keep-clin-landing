@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import StyledComponentsRegistry from "@/lib/registry";
+import { asset } from "@/config/site";
 
 const poppins = localFont({
   src: [
@@ -22,11 +23,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Keep Clin | Atendimento humano potencializado com IA",
     description: "Atendente humana + inteligência artificial + aplicativo próprio para a sua clínica.",
-    images: ["/img/atendente.webp"],
+    images: [asset("/img/atendente.webp")],
     locale: "pt_BR",
     type: "website",
   },
-  icons: { icon: "/icon.svg" },
+  icons: { icon: asset("/icon.svg") },
 };
 
 export const viewport: Viewport = { themeColor: "#6F3E90", width: "device-width", initialScale: 1 };

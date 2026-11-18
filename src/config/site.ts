@@ -16,3 +16,7 @@ export const site = {
 
 export const whatsappUrl = (msg: string = site.whatsappMessage) =>
   `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(msg)}`;
+
+// Caminho base do site. No GitHub Pages o site fica em /keep-clin-landing; localmente fica vazio.
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+export const asset = (path: string) => `${basePath}${path}`;
