@@ -3,11 +3,11 @@
 
 export const site = {
   name: "Keep Clin",
-  slogan: "Atendimento humano potencializado com inteligência artificial",
+  slogan: "Secretária humana 100% comissionada para clínicas",
   instagramHandle: "@keep.clin.ai",
   email: "keep.clin.ai@gmail.com",
   whatsappNumber: "5585985398589",
-  whatsappMessage: "Olá! Vim pelo site da Keep Clin e quero saber mais sobre a atendente com IA.",
+  whatsappMessage: "Olá! Vim pelo site da Keep Clin e quero saber mais sobre a secretária 100% comissionada.",
   links: {
     instagram: "https://www.instagram.com/keep.clin.ai/",
     linkedin: "https://www.linkedin.com/in/", // completar com o final do perfil (ex.: https://www.linkedin.com/in/keep-clin)

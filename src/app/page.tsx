@@ -4,6 +4,9 @@ import { Problem } from "@/components/Problem";
 import { Solution } from "@/components/Solution";
 import { Services } from "@/components/Services";
 import { AppShowcase } from "@/components/AppShowcase";
+import { SalesMethod } from "@/components/SalesMethod";
+import { ContractMetrics } from "@/components/ContractMetrics";
+import { PatientLight } from "@/components/PatientLight";
 import { Benefits } from "@/components/Benefits";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Faq } from "@/components/Faq";
@@ -20,6 +23,9 @@ export default function Home() {
         <Problem />
         <Solution />
         <Services />
+        <SalesMethod />
+        <ContractMetrics />
+        <PatientLight />
         <AppShowcase />
         <Benefits />
         <HowItWorks />

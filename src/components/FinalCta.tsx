@@ -70,7 +70,7 @@ export function FinalCta() {
         <Box>
           <LogoMark $size={64} aria-hidden style={{ background: "rgba(255,255,255,.18)", boxShadow: "none" }}>K</LogoMark>
           <h2 id="cta-titulo">Pronto para um atendimento de alto nível?</h2>
-          <p>Entre em contato com a gente e descubra o que a união de gente com tecnologia pode fazer pela sua clínica.</p>
+          <p>Uma secretária 100% comissionada, com metas em contrato. A gente cresce junto com o seu sucesso.</p>
           <Btns>
             <WhiteBtn href={whatsappUrl()} target="_blank" rel="noopener noreferrer">
               <FaWhatsapp aria-hidden /> Falar no WhatsApp

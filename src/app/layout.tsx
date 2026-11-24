@@ -16,13 +16,13 @@ const poppins = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "Keep Clin | Atendimento humano potencializado com IA para clínicas",
+  title: "Keep Clin | Secretária humana 100% comissionada para clínicas",
   description:
-    "A Keep Clin oferece uma atendente humana da nossa equipe, que trabalha com inteligência artificial, automação e um aplicativo próprio para a sua clínica. Por menos da metade do custo de uma secretária comum.",
+    "A Keep Clin oferece uma secretária humana 100% comissionada, especialista em vendas e sucesso do cliente, com metas definidas em contrato, atendimento 24h e um aplicativo próprio para a sua clínica.",
   keywords: ["secretária para clínica", "atendimento clínica", "IA para clínicas", "CRM clínica", "Keep Clin"],
   openGraph: {
-    title: "Keep Clin | Atendimento humano potencializado com IA",
-    description: "Atendente humana + inteligência artificial + aplicativo próprio para a sua clínica.",
+    title: "Keep Clin | Secretária humana 100% comissionada",
+    description: "Secretária 100% comissionada, metas em contrato e aplicativo próprio para a sua clínica.",
     images: [asset("/img/atendente.webp")],
     locale: "pt_BR",
     type: "website",

@@ -10,9 +10,9 @@ import { Container, Section, Eyebrow, H2, Lead, GradText } from "./ui";
 const modules = [
   "Agenda e confirmações",
   "WhatsApp e Instagram",
-  "Cadastro de pacientes",
-  "Indicadores e metas",
-  "Lembretes automáticos",
+  "Indicadores em tempo real",
+  "Receituário e contratos",
+  "Financeiro e relatórios",
   "Módulos sob medida",
 ];
 
@@ -192,7 +192,7 @@ export function AppShowcase() {
           <H2 id="app-titulo">
             Sua clínica <GradText>na palma da mão</GradText>
           </H2>
-          <Lead>Agenda, conversas e indicadores num só lugar, num aplicativo feito para a sua clínica.</Lead>
+          <Lead>A Keep Clin automatiza as tarefas repetitivas com um CRM ou um aplicativo feito para a sua clínica. Acompanhe indicadores e atendimentos em tempo real.</Lead>
           <List>
             {modules.map((m) => (
               <li key={m}><FiCheck aria-hidden /> {m}</li>

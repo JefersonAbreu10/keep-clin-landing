@@ -7,12 +7,20 @@ import { Container, Section, Eyebrow, H2, SectionHead } from "./ui";
 
 const faqs = [
   {
-    q: "A atendente é funcionária da minha clínica?",
-    a: "Não. A atendente é da equipe da Keep Clin. Nós cuidamos da seleção, do treinamento e do acompanhamento, e ela atende a sua clínica com o apoio da inteligência artificial.",
+    q: "A secretária é funcionária da minha clínica?",
+    a: "Não. A secretária é da equipe da Keep Clin, especialista em vendas e sucesso do cliente. Nós cuidamos da seleção, do treinamento e do acompanhamento, e ela atende a sua clínica com a inteligência artificial potencializando os resultados.",
   },
   {
     q: "Quanto custa?",
-    a: "Os pacotes custam menos da metade do valor de uma secretária comum. Fale com a gente pelo WhatsApp para receber a proposta ideal para o tamanho da sua clínica.",
+    a: "O modelo é 100% comissionado: a gente cresce junto com o seu sucesso. Fale com a gente pelo WhatsApp para receber a proposta ideal para a sua clínica.",
+  },
+  {
+    q: "O que são as metas definidas em contrato?",
+    a: "São 12 indicadores, como tempo de resposta, conversão de conversas em consultas, faltas, satisfação e retorno dos pacientes. Eles ficam no contrato: é o nosso compromisso, por escrito.",
+  },
+  {
+    q: "O atendimento funciona 24 horas?",
+    a: "Sim. A sua clínica responde 24 horas, 7 dias por semana: a inteligência artificial garante a resposta rápida, e a secretária continua o atendimento com o toque humano.",
   },
   {
     q: "O que exatamente é automatizado?",
@@ -20,7 +28,7 @@ const faqs = [
   },
   {
     q: "Como funciona o aplicativo?",
-    a: "Criamos um aplicativo da Keep Clin para a sua clínica, com os módulos que fazem sentido para você, como agenda, atendimento, cadastro, financeiro e indicadores. Ele funciona no computador e no celular.",
+    a: "Criamos um aplicativo da Keep Clin para a sua clínica, com os módulos que fazem sentido para você, como agenda, atendimento, receituário, financeiro, relatórios, contratos e indicadores. Você acompanha os atendimentos em tempo real. Ele funciona no computador e no celular.",
   },
 ];
 

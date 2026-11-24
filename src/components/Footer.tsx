@@ -41,7 +41,7 @@ export function Footer() {
       <Grid>
         <div>
           <Logo light />
-          <p>{site.slogan}. Atendente humana da nossa equipe, automação e um aplicativo feito para a sua clínica.</p>
+          <p>{site.slogan}. Especialista em vendas e sucesso do cliente, com metas em contrato e um aplicativo feito para a sua clínica.</p>
         </div>
         <nav aria-label="Rodapé">
           <h4>Navegação</h4>
@@ -64,7 +64,7 @@ export function Footer() {
       </Grid>
       <Bottom>
         <span>© {new Date().getFullYear()} Keep Clin. Todos os direitos reservados.</span>
-        <span>Atendimento humano potencializado com IA</span>
+        <span>Crescemos junto com o seu sucesso</span>
       </Bottom>
     </Foot>
   );

@@ -6,8 +6,8 @@ import { Container, Section, Eyebrow, H2, Lead, SectionHead } from "./ui";
 const steps = [
   { n: "01", title: "Conversa inicial", text: "Entendemos a rotina e os objetivos da sua clínica." },
   { n: "02", title: "Análise e configuração", text: "Configuramos o aplicativo e as automações." },
-  { n: "03", title: "Atendente em ação", text: "Nossa atendente assume, com a IA ao lado." },
-  { n: "04", title: "Acompanhamento contínuo", text: "Metas acompanhadas e melhorias constantes." },
+  { n: "03", title: "Secretária em ação", text: "Atendimento, ligações e follow-up com o método SPIN." },
+  { n: "04", title: "Metas e planos de ação", text: "12 indicadores em contrato e o farol do paciente." },
 ];
 
 

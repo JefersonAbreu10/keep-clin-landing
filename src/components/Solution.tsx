@@ -9,24 +9,24 @@ import { Container, Section, Eyebrow, H2, Lead, SectionHead, GradText } from "./
 const pillars = [
   {
     Icon: FiUserCheck,
-    title: "Atendente humana da nossa equipe",
+    title: "Secretária humana, 100% comissionada",
     text: "Cuida do atendimento, das ligações e dos pacientes. Você não contrata nem treina.",
-    img: asset("/img/atendente-recepcao.webp"),
-    alt: "Atendente da Keep Clin de braços cruzados na recepção da clínica",
+    img: asset("/img/atendente.webp"),
+    alt: "Secretária da Keep Clin sorrindo com headset em um escritório moderno",
   },
   {
     Icon: FiZap,
     title: "Inteligência artificial e automação",
     text: "Confirmações, lembretes, cadastros e acompanhamento rodam sozinhos.",
     img: asset("/img/atendente-notebook.webp"),
-    alt: "Atendente trabalhando no notebook com ferramentas de automação",
+    alt: "Secretária trabalhando no notebook com ferramentas de automação",
   },
   {
     Icon: FiSmartphone,
     title: "Um aplicativo só da sua clínica",
     text: "Tudo o que hoje está em planilhas passa a viver num só lugar.",
     img: asset("/img/atendente-ligacao.webp"),
-    alt: "Atendente em ligação com painel de indicadores na tela",
+    alt: "Secretária em ligação com painel de indicadores na tela",
   },
 ];
 
@@ -108,7 +108,7 @@ export function Solution() {
           <H2 id="solucao-titulo">
             A Keep Clin <GradText>muda esse jogo</GradText>
           </H2>
-          <Lead>A tecnologia cuida do repetitivo. A nossa atendente cuida das pessoas.</Lead>
+          <Lead>A tecnologia cuida do repetitivo. A secretária cuida das pessoas e das vendas.</Lead>
         </SectionHead>
         <Cards>
           {pillars.map(({ Icon, title, text, img, alt }) => (

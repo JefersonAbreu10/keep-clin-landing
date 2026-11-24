@@ -11,7 +11,7 @@ const services = [
   { Icon: FiCalendar, title: "Agenda e confirmações", text: "Agendamentos, confirmações e lembretes automáticos." },
   { Icon: FiRepeat, title: "Automação do repetitivo", text: "Cadastros e tarefas manuais automatizados." },
   { Icon: FiUsers, title: "Jornada do paciente", text: "Do primeiro contato ao retorno, etapa por etapa." },
-  { Icon: FiTarget, title: "Análise de leads", text: "De onde vem cada paciente e o que traz resultado." },
+  { Icon: FiTarget, title: "Conversão de leads", text: "Ligações com o método SPIN para virar consulta." },
   { Icon: FiHeart, title: "Retenção de pacientes", text: "Identificamos riscos e trazemos o paciente de volta." },
   { Icon: FiBarChart2, title: "Indicadores", text: "Metas e métricas acompanhadas de perto." },
   { Icon: FiActivity, title: "Planos de ação", text: "Ações práticas definidas a partir dos dados." },
@@ -66,7 +66,7 @@ export function Services() {
         <SectionHead>
           <Eyebrow $light>Serviços</Eyebrow>
           <H2 id="servicos-titulo" $light>O que a Keep Clin faz pela sua clínica</H2>
-          <Lead $light>Nossa atendente fica livre para o estratégico: reter pacientes, vender e analisar resultados.</Lead>
+          <Lead $light>Atendimento, ligações, follow-up, conversão de leads, retenção, fidelização e muito mais.</Lead>
         </SectionHead>
         <Grid>
           {services.map(({ Icon, title, text }) => (
