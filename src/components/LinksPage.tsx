@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa6";
 import { FiBriefcase, FiZap, FiShare2, FiChevronRight } from "react-icons/fi";
 import { site, whatsappUrl, basePath } from "@/config/site";
+import { KeepInfo } from "./KeepInfo";
 
 // Edite aqui os destinos dos botões.
 const links = [
@@ -232,6 +233,8 @@ export function LinksPage() {
             </li>
           ))}
         </List>
+
+        <KeepInfo />
 
         <Social href={site.links.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram da Keep Clin">
           <FaInstagram />
