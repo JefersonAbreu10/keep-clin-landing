@@ -32,6 +32,28 @@ const Bar = styled.header<{ $scrolled: boolean }>`
     `}
 `;
 
+const Progress = styled.div`
+  position: absolute;
+  left: 0; bottom: 0;
+  height: 3px;
+  width: 100%;
+  transform-origin: left;
+  background: ${({ theme }) => theme.gradient};
+  pointer-events: none;
+`;
+
+const Skip = styled.a`
+  position: fixed;
+  top: -120px; left: 8px;
+  z-index: 100;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: ${({ theme }) => theme.colors.ink};
+  color: #fff;
+  font-weight: 700;
+  &:focus { top: 8px; }
+`;
+
 const Inner = styled(Container)`
   display: flex;
   align-items: center;
@@ -44,16 +66,19 @@ const Nav = styled.nav`
   display: none;
   ${({ theme }) => theme.bp.lg} {
     display: flex;
-    gap: 30px;
+    gap: 6px;
     a {
+      padding: 12px 10px;
       font-size: 15px;
       font-weight: 500;
       color: ${({ theme }) => theme.colors.text};
       position: relative;
+      &[aria-current="true"] { color: ${({ theme }) => theme.colors.purple}; font-weight: 700; }
+      &[aria-current="true"]::after { transform: scaleX(1); }
       &::after {
         content: "";
         position: absolute;
-        left: 0; right: 0; bottom: -6px;
+        left: 10px; right: 10px; bottom: 4px;
         height: 2px;
         border-radius: 2px;
         background: ${({ theme }) => theme.gradient};
@@ -119,6 +144,8 @@ const Drawer = styled.div<{ $open: boolean }>`
     padding: 8px 4px;
     &:active { color: ${({ theme }) => theme.colors.purple}; }
     border-bottom: 1px solid ${({ theme }) => theme.colors.line};
+    &[aria-current="true"] { color: ${({ theme }) => theme.colors.purple}; }
+    &[aria-current="true"]::before { content: ""; width: 6px; height: 22px; margin-right: 12px; border-radius: 3px; background: ${({ theme }) => theme.gradient}; }
   }
   ${({ theme }) => theme.bp.lg} { display: none; }
 `;
@@ -133,12 +160,34 @@ const DrawerFoot = styled.div`
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("");
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 12);
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(max > 0 ? Math.min(1, window.scrollY / max) : 0);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Destaca no menu a seção que está na tela
+  useEffect(() => {
+    const els = nav.map((n) => document.querySelector(n.href)).filter(Boolean) as Element[];
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) setActive("#" + e.target.id); });
+      },
+      { rootMargin: "-45% 0px -50% 0px" }
+    );
+    els.forEach((el) => io.observe(el));
+    const top = document.getElementById("inicio");
+    const ioTop = new IntersectionObserver(([e]) => e.isIntersecting && setActive(""), { rootMargin: "-45% 0px -50% 0px" });
+    if (top) ioTop.observe(top);
+    return () => { io.disconnect(); ioTop.disconnect(); };
   }, []);
 
   useEffect(() => {
@@ -154,6 +203,7 @@ export function Header() {
 
   return (
     <>
+    <Skip href="#conteudo">Pular para o conteúdo</Skip>
     <Bar $scrolled={scrolled || open}>
       <Inner>
         <a href="#inicio" aria-label="Keep Clin, voltar ao início">
@@ -161,7 +211,7 @@ export function Header() {
         </a>
         <Nav aria-label="Principal">
           {nav.map((n) => (
-            <a key={n.href} href={n.href}>{n.label}</a>
+            <a key={n.href} href={n.href} aria-current={active === n.href ? "true" : undefined}>{n.label}</a>
           ))}
         </Nav>
         <Right>
@@ -173,10 +223,11 @@ export function Header() {
           </MenuBtn>
         </Right>
       </Inner>
+      {scrolled && <Progress style={{ transform: `scaleX(${progress})` }} aria-hidden />}
     </Bar>
       <Drawer $open={open} aria-hidden={!open}>
         {nav.map((n) => (
-          <a className="link" key={n.href} href={n.href} onClick={() => setOpen(false)} tabIndex={open ? 0 : -1}>
+          <a className="link" key={n.href} href={n.href} onClick={() => setOpen(false)} tabIndex={open ? 0 : -1} aria-current={active === n.href ? "true" : undefined}>
             {n.label}
           </a>
         ))}

@@ -37,6 +37,7 @@ const Btn = styled.a<{ $hidden: boolean }>`
 // Some quando o topo ou a chamada final (que já têm botão de WhatsApp) estão na tela.
 export function FloatingWhatsApp() {
   const [hidden, setHidden] = useState(true);
+  const [scrollingDown, setScrollingDown] = useState(false);
 
   useEffect(() => {
     const targets = ["inicio", "contato"].map((id) => document.getElementById(id)).filter(Boolean) as Element[];
@@ -49,7 +50,18 @@ export function FloatingWhatsApp() {
       { threshold: 0.35 }
     );
     targets.forEach((t) => io.observe(t));
-    return () => io.disconnect();
+    // Some enquanto a pessoa rola para baixo (não cobre o conteúdo) e volta ao parar ou subir.
+    let last = window.scrollY;
+    let timer: ReturnType<typeof setTimeout>;
+    const onScroll = () => {
+      const y = window.scrollY;
+      if (Math.abs(y - last) > 6) setScrollingDown(y > last);
+      last = y;
+      clearTimeout(timer);
+      timer = setTimeout(() => setScrollingDown(false), 700);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => { io.disconnect(); window.removeEventListener("scroll", onScroll); clearTimeout(timer); };
   }, []);
 
   return (
@@ -58,7 +70,7 @@ export function FloatingWhatsApp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar com a Keep Clin no WhatsApp"
-      $hidden={hidden}
+      $hidden={hidden || scrollingDown}
       aria-hidden={hidden}
       tabIndex={hidden ? -1 : 0}
     >

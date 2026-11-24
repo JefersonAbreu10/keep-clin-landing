@@ -16,6 +16,8 @@ const modules = [
   "Módulos sob medida",
 ];
 
+const chips = ["Agenda", "WhatsApp", "Indicadores", "Receituário", "Financeiro", "Contratos"];
+
 const screens = [
   { src: asset("/img/app-inicio.webp"), alt: "Tela inicial do app Keep Clin com as consultas do dia", label: "Início" },
   { src: asset("/img/app-conversas.webp"), alt: "Tela de conversas do app Keep Clin com mensagens do WhatsApp e Instagram", label: "Conversas" },
@@ -137,13 +139,13 @@ const Phone = styled.li`
 const Dots = styled.div`
   display: flex;
   justify-content: center;
-  gap: 4px;
-  margin-top: 2px;
+  gap: 0;
+  margin-top: -4px;
   button {
     display: grid;
     place-items: center;
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
     &::after {
       content: "";
       width: 8px; height: 8px;
@@ -192,19 +194,19 @@ export function AppShowcase() {
           <H2 id="app-titulo">
             Sua clínica <GradText>na palma da mão</GradText>
           </H2>
-          <Lead>A Keep Clin automatiza as tarefas repetitivas com um CRM ou um aplicativo feito para a sua clínica. Acompanhe indicadores e atendimentos em tempo real.</Lead>
+          <Lead>Automatizamos o repetitivo com um CRM ou um aplicativo feito para a sua clínica, com indicadores e atendimentos em tempo real.</Lead>
           <List>
             {modules.map((m) => (
               <li key={m}><FiCheck aria-hidden /> {m}</li>
             ))}
           </List>
           <Chips>
-            {modules.map((m) => <li key={m}>{m}</li>)}
+            {chips.map((m) => <li key={m}>{m}</li>)}
           </Chips>
         </Text>
 
         <div>
-          <Track ref={trackRef} aria-label="Telas do aplicativo Keep Clin">
+          <Track ref={trackRef} aria-label="Telas do aplicativo Keep Clin (deslize para ver mais)" tabIndex={0}>
             {screens.map((s, i) => (
               <Phone key={s.src}>
                 <div className="frame">

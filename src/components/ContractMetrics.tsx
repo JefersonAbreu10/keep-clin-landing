@@ -32,8 +32,8 @@ const Grid = styled.ul`
     border: 1px solid rgba(255, 255, 255, 0.14);
     ${({ theme }) => theme.bp.md} { padding: 16px 14px; border-radius: 16px; }
   }
-  b { display: block; font-size: 13px; color: #fff; }
-  span { display: block; margin-top: 2px; font-size: 11px; line-height: 1.3; color: rgba(255,255,255,.66); }
+  b { display: block; font-size: 13.5px; color: #fff; }
+  span { display: block; margin-top: 2px; font-size: 12px; line-height: 1.3; color: rgba(255,255,255,.78); }
   ${({ theme }) => theme.bp.md} { b { font-size: 17px; } span { font-size: 13.5px; } }
 `;
 

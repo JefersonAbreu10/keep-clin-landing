@@ -37,7 +37,7 @@ const List = styled.ul`
     ${({ theme }) => theme.bp.md} { padding: 18px; align-items: flex-start; }
   }
   b { display: block; font-size: 14.5px; color: ${({ theme }) => theme.colors.ink}; }
-  span { display: block; font-size: 12px; line-height: 1.35; color: ${({ theme }) => theme.colors.muted}; }
+  span { display: block; font-size: 12.5px; line-height: 1.35; color: ${({ theme }) => theme.colors.muted}; }
   em { display: inline-block; margin-top: 4px; font-style: normal; font-size: 12px; font-weight: 700; color: ${({ theme }) => theme.colors.purple}; }
   ${({ theme }) => theme.bp.md} { b { font-size: 17px; } span { font-size: 14px; } em { font-size: 13.5px; } }
 `;

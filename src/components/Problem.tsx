@@ -83,7 +83,7 @@ const Tag = styled.p`
   display: inline-block;
   padding: 8px 16px;
   border-radius: 999px;
-  background: #E5484D;
+  background: #C9353A;
   color: #fff;
   font-weight: 700;
   font-size: 13px;

@@ -43,7 +43,7 @@ const Spin = styled.ul`
   }
   b { display: block; font-size: 14px; color: ${({ theme }) => theme.colors.ink}; }
   q { display: block; margin-top: 1px; font-size: 13px; color: ${({ theme }) => theme.colors.text}; }
-  small { display: block; margin-top: 1px; font-size: 12px; color: ${({ theme }) => theme.colors.purple}; font-weight: 600; }
+  small { display: block; margin-top: 1px; font-size: 12.5px; color: ${({ theme }) => theme.colors.purple}; font-weight: 600; }
   ${({ theme }) => theme.bp.md} { b { font-size: 17px; } q { font-size: 15px; } small { font-size: 14px; } }
 `;
 
@@ -66,7 +66,7 @@ const Flow = styled.div`
     flex: 1; text-align: center; padding: 7px 4px; border-radius: 14px;
     background: #fff; border: 1px solid ${({ theme }) => theme.colors.line};
     font-size: 13.5px; font-weight: 700; color: ${({ theme }) => theme.colors.ink};
-    small { display: block; font-size: 11px; color: ${({ theme }) => theme.colors.orange}; }
+    small { display: block; font-size: 12px; color: ${({ theme }) => theme.colors.orange}; }
   }
   div.hi { background: ${({ theme }) => theme.gradient}; color: #fff; border-color: transparent; small { color: #fff; } }
   svg { flex-shrink: 0; color: ${({ theme }) => theme.colors.muted}; }
@@ -77,7 +77,7 @@ const Pills = styled.ul`
   margin-top: 8px;
   display: flex; flex-wrap: wrap; gap: 5px;
   li {
-    font-size: 11.5px; font-weight: 600; padding: 4px 9px; border-radius: 999px;
+    font-size: 12.5px; font-weight: 600; padding: 4px 10px; border-radius: 999px;
     background: #fff; border: 1px solid ${({ theme }) => theme.colors.line}; color: ${({ theme }) => theme.colors.purple};
   }
   ${({ theme }) => theme.bp.md} { li { font-size: 14px; padding: 8px 14px; } }

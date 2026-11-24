@@ -6,7 +6,7 @@ export const theme = {
     purpleDark: "#3B1F4F",
     ink: "#24152F",
     text: "#4A3A55",
-    muted: "#7D6D88",
+    muted: "#675873",
     bg: "#FFFAF6",
     soft: "#F7EEE9",
     line: "#EADDD7",

@@ -91,10 +91,10 @@ export function Faq() {
             const isOpen = open === i;
             return (
               <Item key={f.q} $open={isOpen}>
-                <button onClick={() => setOpen(isOpen ? null : i)} aria-expanded={isOpen} aria-controls={`faq-${i}`}>
+                <button id={`faq-q-${i}`} onClick={() => setOpen(isOpen ? null : i)} aria-expanded={isOpen} aria-controls={`faq-${i}`}>
                   {f.q} <FiPlus aria-hidden />
                 </button>
-                <div className="a" id={`faq-${i}`} role="region">
+                <div className="a" id={`faq-${i}`} role="region" aria-labelledby={`faq-q-${i}`}>
                   <div><p>{f.a}</p></div>
                 </div>
               </Item>
