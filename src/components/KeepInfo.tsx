@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 import {
-  FiMessageCircle, FiPhone, FiRepeat, FiTarget, FiShield, FiHeart, FiClock,
+  FiMessageCircle, FiRepeat, FiTarget, FiShield, FiHeart, FiClock,
   FiTrendingUp, FiTrendingDown, FiStar, FiArrowRight,
 } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -228,7 +228,6 @@ const S = ({ n, t }: { n: number; t: string }) => (
 
 const tarefas = [
   { I: FiMessageCircle, t: "Atendimento" },
-  { I: FiPhone, t: "Ligações" },
   { I: FiRepeat, t: "Follow-up" },
   { I: FiTarget, t: "Conversão de leads" },
   { I: FiShield, t: "Retenção" },
@@ -260,7 +259,7 @@ const metricas = [
 const farol = [
   ["#2BC48A", "Verde · Satisfeito", "Manter o relacionamento."],
   ["#F5C04A", "Amarelo · Neutro", "Não reclama, mas também não se encanta. Ação: encantar."],
-  ["#E5484D", "Vermelho · Se afastando", "Ação: ligar e reagendar."],
+  ["#E5484D", "Vermelho · Se afastando", "Ação: retomar o contato e reagendar."],
   ["#7A1F3D", "Crítico · Risco de não voltar", "Ação: contato prioritário."],
 ];
 
@@ -279,7 +278,7 @@ export function KeepInfo() {
       <Section>
         <S n={2} t="O que ela faz" />
         <H2>Do primeiro contato até o paciente <em>voltar</em></H2>
-        <P>Ela responde em minutos, liga para cada lead, acolhe, agenda, confirma e acompanha cada paciente.</P>
+        <P>Responde em minutos, acolhe cada lead, conduz a etapa de vendas, agenda, confirma e acompanha cada paciente.</P>
         <Grid $cols={2}>
           {tarefas.map(({ I, t }) => (
             <Tile key={t}><I aria-hidden />{t}</Tile>
@@ -307,7 +306,7 @@ export function KeepInfo() {
       <Section>
         <S n={4} t="Método SPIN" />
         <H2>Primeiro ela <em>entende</em>, depois apresenta a solução</H2>
-        <P>Nas ligações, ela usa o método SPIN, quatro perguntas que revelam o que o paciente realmente precisa:</P>
+        <P>Na etapa de vendas, usamos o método SPIN, quatro perguntas que revelam o que o paciente realmente precisa:</P>
         {spin.map(([l, n, q, d]) => (
           <Row key={l}>
             <Badge>{l}</Badge>

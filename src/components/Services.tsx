@@ -11,7 +11,7 @@ const services = [
   { Icon: FiRepeat, title: "Processos e rotinas", text: "Cadastros, confirmações e rotinas automatizadas." },
   { Icon: FiSmartphone, title: "Aplicativo e CRM", text: "Criamos aplicativos, CRM e tecnologias para modernizar a clínica." },
   { Icon: FiCalendar, title: "Agenda e confirmações", text: "Agendamentos e lembretes para reduzir faltas." },
-  { Icon: FiTarget, title: "Conversão de leads", text: "Ligações com o método SPIN para virar consulta." },
+  { Icon: FiTarget, title: "Conversão de leads", text: "Etapa de vendas consultiva com o método SPIN para virar consulta." },
   { Icon: FiHeart, title: "Retenção e fidelização", text: "Identificamos riscos e trazemos o paciente de volta." },
   { Icon: FiBarChart2, title: "Indicadores em tempo real", text: "Informações centralizadas e metas acompanhadas." },
   { Icon: FiActivity, title: "Estratégia e planos de ação", text: "Soluções pensadas para aumentar os lucros." },

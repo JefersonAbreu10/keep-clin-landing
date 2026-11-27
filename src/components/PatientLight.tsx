@@ -6,7 +6,7 @@ import { Container, Section, Eyebrow, H2, Lead, SectionHead, GradText } from "./
 const farol = [
   { c: "#2BC48A", t: "Verde", s: "Satisfeito", a: "Manter o relacionamento" },
   { c: "#F5C04A", t: "Amarelo", s: "Neutro: não reclama, mas também não se encanta", a: "Encantar" },
-  { c: "#E5484D", t: "Vermelho", s: "Se afastando", a: "Ligar e reagendar" },
+  { c: "#E5484D", t: "Vermelho", s: "Se afastando", a: "Retomar o contato e reagendar" },
   { c: "#7A1F3D", t: "Crítico", s: "Risco de não voltar", a: "Contato prioritário" },
 ];
 

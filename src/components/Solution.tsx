@@ -26,7 +26,7 @@ const pillars = [
     title: "Gestão na palma da mão",
     text: "Aplicativo com todas as informações da clínica centralizadas em um só lugar.",
     img: asset("/img/atendente-ligacao.webp"),
-    alt: "Especialista em ligação com painel de indicadores na tela",
+    alt: "Especialista com painel de indicadores na tela",
   },
 ];
 
