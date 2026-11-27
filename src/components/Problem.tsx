@@ -3,14 +3,14 @@
 import Image from "next/image";
 import { asset } from "@/config/site";
 import styled from "styled-components";
-import { FiGrid, FiMessageCircle, FiClock, FiTrendingDown } from "react-icons/fi";
+import { FiGrid, FiHeart, FiClock, FiTrendingDown } from "react-icons/fi";
 import { Container, Section, Eyebrow, H2, Lead } from "./ui";
 
 const pains = [
-  { Icon: FiGrid, title: "Tudo em planilhas", text: "Agenda numa planilha, financeiro em outra." },
-  { Icon: FiMessageCircle, title: "Paciente esperando", text: "Mensagens sem resposta viram consultas perdidas." },
-  { Icon: FiClock, title: "Equipe sobrecarregada", text: "Confirmações e cadastros feitos à mão." },
-  { Icon: FiTrendingDown, title: "Dinheiro na mesa", text: "Pacientes somem e ninguém sabe por quê." },
+  { Icon: FiTrendingDown, title: "Pouco resultado em vendas", text: "Leads chegam, mas poucos viram consulta." },
+  { Icon: FiHeart, title: "Pouca retenção", text: "Pacientes somem e não voltam, sem fidelização." },
+  { Icon: FiGrid, title: "Informações espalhadas", text: "Agenda, WhatsApp e financeiro em lugares diferentes." },
+  { Icon: FiClock, title: "Clínica sem processos", text: "Tudo depende de pessoas e de improviso." },
 ];
 
 const Grid = styled(Container)`
@@ -107,7 +107,7 @@ export function Problem() {
         <div>
           <Eyebrow>O problema</Eyebrow>
           <H2 id="problema-titulo">Sua clínica ainda roda no improviso?</H2>
-          <Lead>Processos espalhados fazem a equipe perder tempo e a clínica perder dinheiro.</Lead>
+          <Lead>Sem processos e sem dados centralizados, a equipe perde tempo e a clínica perde pacientes e dinheiro.</Lead>
           <Cards>
             {pains.map(({ Icon, title, text }) => (
               <li key={title}>

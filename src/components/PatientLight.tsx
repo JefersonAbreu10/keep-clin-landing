@@ -74,7 +74,7 @@ export function PatientLight() {
         <SectionHead>
           <Eyebrow>Farol do paciente</Eyebrow>
           <H2 id="farol-titulo">Cada cor, uma ação. <GradText>Meta: todos no verde.</GradText></H2>
-          <Lead>A secretária classifica cada paciente pela satisfação e age de forma diferente para cada um.</Lead>
+          <Lead>A IA e a humana dedicada classificam cada paciente pela satisfação e agem de forma diferente para cada um.</Lead>
         </SectionHead>
         <Grid>
           <List>

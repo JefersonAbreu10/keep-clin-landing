@@ -80,7 +80,7 @@ export function ContractMetrics() {
             Sua clínica <GradText>não é só mais uma</GradText>
           </H2>
           <Lead $light>
-            As metas ficam definidas em contrato, com 12 indicadores. Cada número tem uma estratégia por trás, com técnicas de vendas e planos de ação.
+            Damos garantia de resultado: as metas ficam definidas em contrato, com 12 indicadores de sucesso do cliente. Cada número tem uma estratégia por trás, com técnicas de vendas e planos de ação.
           </Lead>
         </SectionHead>
         <Grid>
@@ -91,7 +91,7 @@ export function ContractMetrics() {
         <Bottom>
           <Stamp><FiFileText aria-hidden /> DEFINIDO EM CONTRATO</Stamp>
           <Promise>
-            <strong>Não é só promessa:</strong> é o nosso compromisso com a sua clínica, por escrito.
+            <strong>Garantia de resultado:</strong> é o nosso compromisso com a sua clínica, por escrito.
           </Promise>
         </Bottom>
       </Container>

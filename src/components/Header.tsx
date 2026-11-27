@@ -11,7 +11,7 @@ import { whatsappUrl } from "@/config/site";
 const nav = [
   { href: "#solucao", label: "Solução" },
   { href: "#servicos", label: "Serviços" },
-  { href: "#metodo", label: "Método" },
+  { href: "#estrategia", label: "Estratégia" },
   { href: "#metas", label: "Metas" },
   { href: "#aplicativo", label: "Aplicativo" },
   { href: "#como-funciona", label: "Como funciona" },

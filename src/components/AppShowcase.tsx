@@ -194,7 +194,7 @@ export function AppShowcase() {
           <H2 id="app-titulo">
             Sua clínica <GradText>na palma da mão</GradText>
           </H2>
-          <Lead>Automatizamos o repetitivo com um CRM ou um aplicativo feito para a sua clínica, com indicadores e atendimentos em tempo real.</Lead>
+          <Lead>Todas as informações da clínica centralizadas em um aplicativo feito para você, com a gestão na palma da mão, indicadores e atendimentos em tempo real.</Lead>
           <List>
             {modules.map((m) => (
               <li key={m}><FiCheck aria-hidden /> {m}</li>

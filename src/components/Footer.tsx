@@ -48,6 +48,7 @@ export function Footer() {
           <h3>Navegação</h3>
           <ul className="links">
             <li><a href="#solucao">Solução</a></li>
+            <li><a href="#estrategia">Estratégia</a></li>
             <li><a href="#metodo">Método de vendas</a></li>
             <li><a href="#metas">Metas em contrato</a></li>
             <li><a href="#farol">Farol do paciente</a></li>

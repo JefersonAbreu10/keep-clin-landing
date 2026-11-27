@@ -2,6 +2,8 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Problem } from "@/components/Problem";
 import { Solution } from "@/components/Solution";
+import { Team } from "@/components/Team";
+import { SalesStrategy } from "@/components/SalesStrategy";
 import { Services } from "@/components/Services";
 import { AppShowcase } from "@/components/AppShowcase";
 import { SalesMethod } from "@/components/SalesMethod";
@@ -22,7 +24,9 @@ export default function Home() {
         <Hero />
         <Problem />
         <Solution />
+        <Team />
         <Services />
+        <SalesStrategy />
         <SalesMethod />
         <ContractMetrics />
         <PatientLight />

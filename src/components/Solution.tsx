@@ -9,24 +9,24 @@ import { Container, Section, Eyebrow, H2, Lead, SectionHead, GradText } from "./
 const pillars = [
   {
     Icon: FiUserCheck,
-    title: "Secretária humana, 100% comissionada",
-    text: "Cuida do atendimento, das ligações e dos pacientes. Você não contrata nem treina.",
+    title: "Um humano dedicado à sua clínica",
+    text: "Especialista em vendas e sucesso do cliente, atuando junto com a IA. Você não contrata nem treina.",
     img: asset("/img/atendente.webp"),
-    alt: "Secretária da Keep Clin sorrindo com headset em um escritório moderno",
+    alt: "Especialista da Keep Clin sorrindo com headset em um escritório moderno",
   },
   {
     Icon: FiZap,
-    title: "Inteligência artificial e automação",
-    text: "Confirmações, lembretes, cadastros e acompanhamento rodam sozinhos.",
+    title: "IA-First: a clínica que automatiza",
+    text: "WhatsApp, Instagram e rotinas administrativas rodam com inteligência artificial.",
     img: asset("/img/atendente-notebook.webp"),
-    alt: "Secretária trabalhando no notebook com ferramentas de automação",
+    alt: "Especialista trabalhando no notebook com ferramentas de automação",
   },
   {
     Icon: FiSmartphone,
-    title: "Um aplicativo só da sua clínica",
-    text: "Tudo o que hoje está em planilhas passa a viver num só lugar.",
+    title: "Gestão na palma da mão",
+    text: "Aplicativo com todas as informações da clínica centralizadas em um só lugar.",
     img: asset("/img/atendente-ligacao.webp"),
-    alt: "Secretária em ligação com painel de indicadores na tela",
+    alt: "Especialista em ligação com painel de indicadores na tela",
   },
 ];
 
@@ -106,9 +106,9 @@ export function Solution() {
         <SectionHead $center>
           <Eyebrow>A solução</Eyebrow>
           <H2 id="solucao-titulo">
-            A Keep Clin <GradText>muda esse jogo</GradText>
+            Uma clínica <GradText>AI-First</GradText>, com cuidado humano
           </H2>
-          <Lead>A tecnologia cuida do repetitivo. A secretária cuida das pessoas e das vendas.</Lead>
+          <Lead>A IA cuida do repetitivo e acelera os resultados. As pessoas cuidam dos pacientes, das vendas e da estratégia.</Lead>
         </SectionHead>
         <Cards>
           {pillars.map(({ Icon, title, text, img, alt }) => (
@@ -124,7 +124,7 @@ export function Solution() {
             </Card>
           ))}
         </Cards>
-        <Banner>Gente + tecnologia: um atendimento de alto nível para a sua clínica.</Banner>
+        <Banner>A IA nunca fica sozinha: sempre há um humano dedicado à sua clínica.</Banner>
       </Container>
     </Section>
   );

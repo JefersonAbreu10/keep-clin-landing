@@ -249,13 +249,13 @@ export function Hero() {
 
       <Grid>
         <div>
-          <Badge><i /> 100% comissionada</Badge>
+          <Badge><i /> 100% comissionada · garantia de resultado</Badge>
           <H1>
-            Uma secretária <span>de verdade</span>, 100% comissionada, para a sua clínica
+            Transforme a sua clínica em uma <span>AI-First</span>, sem perder o toque humano
           </H1>
           <Sub>
-            Especialista em <strong>vendas</strong> e <strong>sucesso do cliente</strong>: atende, liga, converte leads e
-            fideliza pacientes, com <strong>metas definidas em contrato</strong>. A gente cresce junto com o seu sucesso.
+            <strong>Inteligência artificial</strong> que atende, automatiza e organiza, com um <strong>humano dedicado à sua clínica</strong>.
+            Mais vendas, mais retenção de pacientes e menos despesas. Nós só lucramos quando a sua clínica prospera.
           </Sub>
           <Ctas>
             <ButtonPrimary href={whatsappUrl()} target="_blank" rel="noopener noreferrer">
@@ -267,8 +267,8 @@ export function Hero() {
           </Ctas>
           <Points>
             <li>100% comissionada</li>
-            <li>Metas em contrato</li>
-            <li>Atendimento 24h</li>
+            <li>Garantia de resultado</li>
+            <li>IA + humano dedicado</li>
           </Points>
           <Social>
             <span>Siga a Keep Clin:</span>
@@ -281,20 +281,20 @@ export function Hero() {
           <PhotoFrame>
             <Image
               src={asset("/img/atendente.webp")}
-              alt="Secretária da Keep Clin sorrindo, usando headset, pronta para atender os pacientes"
+              alt="Especialista humana da Keep Clin sorrindo, usando headset, atendendo com apoio de inteligência artificial"
               fill
               priority
               sizes="(min-width: 1080px) 520px, 1px"
               style={{ objectFit: "cover", objectPosition: "center 20%" }}
             />
             <Caption>
-              <b>Sua secretária Keep Clin</b>
-              <span>Humana, especialista em vendas e sucesso do cliente</span>
+              <b>Um humano dedicado à sua clínica</b>
+              <span>A IA potencializa, nunca fica sozinha</span>
             </Caption>
           </PhotoFrame>
           <FloatCard $pos="top: 34px; left: -40px;">
             <span className="ic ok"><FiCheckCircle aria-hidden /></span>
-            <div><b>Resposta em minutos</b><small>24h, 7 dias por semana</small></div>
+            <div><b>IA responde em minutos</b><small>24h, 7 dias por semana</small></div>
           </FloatCard>
           <FloatCard $pos="top: 46%; right: -36px;" $delay="1.2s">
             <span className="ic"><FiBell aria-hidden /></span>
@@ -302,7 +302,7 @@ export function Hero() {
           </FloatCard>
           <FloatCard $pos="bottom: 96px; left: -44px;" $delay="2.2s">
             <span className="ic"><FiCpu aria-hidden /></span>
-            <div><b>12 metas</b><small>definidas em contrato</small></div>
+            <div><b>Garantia de resultado</b><small>12 metas em contrato</small></div>
           </FloatCard>
         </Visual>
       </Grid>

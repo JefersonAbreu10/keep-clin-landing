@@ -7,12 +7,20 @@ import { Container, Section, Eyebrow, H2, SectionHead } from "./ui";
 
 const faqs = [
   {
-    q: "A secretária é funcionária da minha clínica?",
-    a: "Não. A secretária é da equipe da Keep Clin, especialista em vendas e sucesso do cliente. Nós cuidamos da seleção, do treinamento e do acompanhamento, e ela atende a sua clínica com a inteligência artificial potencializando os resultados.",
+    q: "O que é uma clínica AI-First?",
+    a: "É uma clínica que coloca a inteligência artificial no centro da operação: ela atende, automatiza processos e organiza as informações. Mas a experiência continua humanizada, porque sempre há um humano dedicado à sua clínica.",
+  },
+  {
+    q: "A IA trabalha sozinha?",
+    a: "Não. A IA nunca fica sozinha. Uma humana especialista em vendas e sucesso do cliente atua junto com ela, e outra humana cuida da estratégia, cria os planos de ação e busca soluções para aumentar os lucros.",
+  },
+  {
+    q: "Essa equipe é funcionária da minha clínica?",
+    a: "Não. As especialistas fazem parte da equipe da Keep Clin. Você não contrata nem treina ninguém: nós cuidamos de tudo e atendemos a sua clínica com a IA potencializando os resultados.",
   },
   {
     q: "Quanto custa?",
-    a: "O modelo é 100% comissionado: a gente cresce junto com o seu sucesso. Fale com a gente pelo WhatsApp para receber a proposta ideal para a sua clínica.",
+    a: "O modelo é 100% comissionado: nós lucramos quando a sua clínica prospera, e damos garantia de resultado. Fale com a gente pelo WhatsApp para receber a proposta ideal para a sua clínica.",
   },
   {
     q: "O que são as metas definidas em contrato?",
@@ -20,15 +28,15 @@ const faqs = [
   },
   {
     q: "O atendimento funciona 24 horas?",
-    a: "Sim. A sua clínica responde 24 horas, 7 dias por semana: a inteligência artificial garante a resposta rápida, e a secretária continua o atendimento com o toque humano.",
+    a: "Sim. A sua clínica responde 24 horas, 7 dias por semana: a inteligência artificial garante a resposta rápida, e a humana dedicada continua o atendimento com o toque humano.",
   },
   {
     q: "O que exatamente é automatizado?",
-    a: "Tarefas administrativas e repetitivas, como confirmações de consulta, lembretes, cadastros e acompanhamento dos pacientes. Automatizamos sempre depois de analisar os processos da clínica.",
+    a: "WhatsApp, Instagram e serviços administrativos, como confirmações de consulta, lembretes, cadastros e acompanhamento dos pacientes. Automatizamos sempre depois de analisar os processos da clínica.",
   },
   {
     q: "Como funciona o aplicativo?",
-    a: "Criamos um aplicativo da Keep Clin para a sua clínica, com os módulos que fazem sentido para você, como agenda, atendimento, receituário, financeiro, relatórios, contratos e indicadores. Você acompanha os atendimentos em tempo real. Ele funciona no computador e no celular.",
+    a: "Criamos um aplicativo para a sua clínica, com todas as informações centralizadas e a gestão na palma da sua mão: agenda, atendimento, receituário, financeiro, relatórios, contratos e indicadores, em tempo real. Também criamos CRM e outras tecnologias para modernizar a clínica. Funciona no computador e no celular.",
   },
 ];
 

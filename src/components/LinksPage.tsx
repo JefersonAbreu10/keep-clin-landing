@@ -215,7 +215,7 @@ export function LinksPage() {
         <Name>
           Keep <span>Clin</span>
         </Name>
-        <Bio>Secretária humana 100% comissionada para clínicas. Mais consultas, menos faltas e pacientes fiéis.</Bio>
+        <Bio>Clínica AI-First com experiência humanizada. IA + humano dedicado, 100% comissionado e com garantia de resultado.</Bio>
 
         <List>
           {links.map(({ key, label, sub, href, Icon, bg }, i) => (

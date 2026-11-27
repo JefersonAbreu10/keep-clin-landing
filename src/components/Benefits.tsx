@@ -5,10 +5,10 @@ import { FiDollarSign, FiTrendingUp, FiSmile, FiShield } from "react-icons/fi";
 import { Container, Section, Eyebrow, H2, Lead, SectionHead } from "./ui";
 
 const items = [
-  { Icon: FiDollarSign, title: "100% comissionada", text: "A gente cresce junto com o seu sucesso." },
-  { Icon: FiTrendingUp, title: "Metas em contrato", text: "12 indicadores com o nosso compromisso, por escrito." },
-  { Icon: FiSmile, title: "Experiência humanizada", text: "Uma pessoa de verdade, com a IA potencializando os resultados." },
-  { Icon: FiShield, title: "Sem dor de cabeça", text: "Seleção, treinamento e acompanhamento são com a gente." },
+  { Icon: FiDollarSign, title: "100% comissionado", text: "Lucramos quando a sua clínica prospera." },
+  { Icon: FiShield, title: "Garantia de resultado", text: "12 indicadores e o nosso compromisso, por escrito em contrato." },
+  { Icon: FiSmile, title: "Experiência humanizada", text: "Um humano dedicado à sua clínica, com a IA potencializando." },
+  { Icon: FiTrendingUp, title: "Menos despesas, mais lucro", text: "Automação e estratégia para gastar menos e vender mais." },
 ];
 
 const Grid = styled.ul`
@@ -46,8 +46,8 @@ export function Benefits() {
       <Container>
         <SectionHead $center>
           <Eyebrow>Por que a Keep Clin</Eyebrow>
-          <H2 id="beneficios-titulo">Mais resultado, mais cuidado</H2>
-          <Lead>Nosso objetivo: reduzir despesas desnecessárias, aumentar o lucro e melhorar a qualidade.</Lead>
+          <H2 id="beneficios-titulo">Menos despesas, mais lucro e mais qualidade</H2>
+          <Lead>Nosso objetivo é reduzir despesas, aumentar os lucros e melhorar a qualidade do atendimento.</Lead>
         </SectionHead>
         <Grid>
           {items.map(({ Icon, title, text }) => (

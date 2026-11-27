@@ -5,9 +5,9 @@ import { Container, Section, Eyebrow, H2, Lead, SectionHead } from "./ui";
 
 const steps = [
   { n: "01", title: "Conversa inicial", text: "Entendemos a rotina e os objetivos da sua clínica." },
-  { n: "02", title: "Análise e configuração", text: "Configuramos o aplicativo e as automações." },
-  { n: "03", title: "Secretária em ação", text: "Atendimento, ligações e follow-up com o método SPIN." },
-  { n: "04", title: "Metas e planos de ação", text: "12 indicadores em contrato e o farol do paciente." },
+  { n: "02", title: "Análise e configuração", text: "Mapeamos os processos e configuramos o aplicativo e as automações." },
+  { n: "03", title: "IA e humano em ação", text: "A IA atende e automatiza, e a humana dedicada vende e fideliza." },
+  { n: "04", title: "Metas e estratégia", text: "12 indicadores em contrato e planos de ação para crescer." },
 ];
 
 
@@ -52,7 +52,7 @@ export function HowItWorks() {
         <SectionHead>
           <Eyebrow>Como funciona</Eyebrow>
           <H2 id="como-titulo">Da primeira conversa ao atendimento de alto nível</H2>
-          <Lead>Um processo simples, acompanhado de perto pela nossa equipe.</Lead>
+          <Lead>Um processo simples, acompanhado de perto por quem cuida da sua clínica.</Lead>
         </SectionHead>
         <Steps>
           {steps.map((s) => (

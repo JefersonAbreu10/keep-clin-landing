@@ -2,24 +2,24 @@
 
 import styled from "styled-components";
 import {
-  FiPhoneCall, FiCalendar, FiRepeat, FiUsers, FiTarget, FiHeart, FiBarChart2, FiActivity,
+  FiPhoneCall, FiCalendar, FiRepeat, FiSmartphone, FiTarget, FiHeart, FiBarChart2, FiActivity,
 } from "react-icons/fi";
 import { Container, Section, Eyebrow, H2, Lead, SectionHead } from "./ui";
 
 const services = [
-  { Icon: FiPhoneCall, title: "Atendimento e ligações", text: "WhatsApp, Instagram e telefone com resposta rápida." },
-  { Icon: FiCalendar, title: "Agenda e confirmações", text: "Agendamentos, confirmações e lembretes automáticos." },
-  { Icon: FiRepeat, title: "Automação do repetitivo", text: "Cadastros e tarefas manuais automatizados." },
-  { Icon: FiUsers, title: "Jornada do paciente", text: "Do primeiro contato ao retorno, etapa por etapa." },
+  { Icon: FiPhoneCall, title: "WhatsApp e Instagram", text: "Atendimento automatizado com IA e a humana assumindo quando importa." },
+  { Icon: FiRepeat, title: "Processos e rotinas", text: "Cadastros, confirmações e rotinas automatizadas." },
+  { Icon: FiSmartphone, title: "Aplicativo e CRM", text: "Criamos aplicativos, CRM e tecnologias para modernizar a clínica." },
+  { Icon: FiCalendar, title: "Agenda e confirmações", text: "Agendamentos e lembretes para reduzir faltas." },
   { Icon: FiTarget, title: "Conversão de leads", text: "Ligações com o método SPIN para virar consulta." },
-  { Icon: FiHeart, title: "Retenção de pacientes", text: "Identificamos riscos e trazemos o paciente de volta." },
-  { Icon: FiBarChart2, title: "Indicadores", text: "Metas e métricas acompanhadas de perto." },
-  { Icon: FiActivity, title: "Planos de ação", text: "Ações práticas definidas a partir dos dados." },
+  { Icon: FiHeart, title: "Retenção e fidelização", text: "Identificamos riscos e trazemos o paciente de volta." },
+  { Icon: FiBarChart2, title: "Indicadores em tempo real", text: "Informações centralizadas e metas acompanhadas." },
+  { Icon: FiActivity, title: "Estratégia e planos de ação", text: "Soluções pensadas para aumentar os lucros." },
 ];
 
 const Grid = styled.ul`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
   ${({ theme }) => theme.bp.md} { gap: 14px; }
   ${({ theme }) => theme.bp.lg} { grid-template-columns: repeat(4, 1fr); gap: 16px; }
@@ -42,7 +42,7 @@ const Item = styled.li`
     svg { width: 18px; height: 18px; }
   }
   .ic { flex-shrink: 0; }
-  h3 { font-size: 14px; color: #fff; line-height: 1.25; }
+  h3 { min-width: 0; font-size: 13.5px; color: #fff; line-height: 1.25; overflow-wrap: anywhere; }
   p { display: none; font-size: 12px; line-height: 1.4; color: rgba(255,255,255,.65); }
 
   ${({ theme }) => theme.bp.md} {
@@ -65,8 +65,8 @@ export function Services() {
       <Container>
         <SectionHead>
           <Eyebrow $light>Serviços</Eyebrow>
-          <H2 id="servicos-titulo" $light>O que a Keep Clin faz pela sua clínica</H2>
-          <Lead $light>Atendimento, ligações, follow-up, conversão de leads, retenção, fidelização e muito mais.</Lead>
+          <H2 id="servicos-titulo" $light>Tecnologia e estratégia para a sua clínica</H2>
+          <Lead $light>Automatizamos processos, criamos as ferramentas e cuidamos da venda e da retenção dos seus pacientes.</Lead>
         </SectionHead>
         <Grid>
           {services.map(({ Icon, title, text }) => (

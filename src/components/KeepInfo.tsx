@@ -269,10 +269,10 @@ export function KeepInfo() {
     <Wrap>
       <Section>
         <S n={1} t="O que é" />
-        <H2>Uma secretária <em>de verdade</em>, 100% comissionada</H2>
+        <H2>Clínica <em>AI-First</em>, com cuidado humano</H2>
         <P>
-          A Keep Clin é uma secretária humana, especialista em <b>vendas</b> e <b>sucesso do cliente</b>.
-          O modelo é <b>100% comissionado</b>: a gente cresce junto com o seu sucesso.
+          A Keep Clin transforma a sua clínica em uma <b>AI-First</b> sem perder a experiência humanizada.
+          Um <b>humano dedicado</b> atua com a IA, o modelo é <b>100% comissionado</b> e damos <b>garantia de resultado</b>.
         </P>
       </Section>
 
@@ -293,13 +293,13 @@ export function KeepInfo() {
         <H2>Cada paciente é <em>único</em></H2>
         <P>
           Cada paciente é analisado de forma individual. A <b>inteligência artificial potencializa</b> os resultados,
-          mas quem cuida é uma pessoa.
+          mas sempre há uma pessoa cuidando.
         </P>
         <Row>
           <Badge><FiClock /></Badge>
           <RowTxt>
             <b>24 horas, 7 dias por semana</b>
-            A IA garante a resposta rápida a qualquer hora, e a secretária continua o atendimento com o toque humano.
+            A IA garante a resposta rápida a qualquer hora, e a humana dedicada continua o atendimento com o toque humano.
           </RowTxt>
         </Row>
       </Section>
