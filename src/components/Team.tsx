@@ -14,8 +14,8 @@ const team = [
   },
   {
     Icon: FiUserCheck,
-    tag: "Humana dedicada",
-    title: "Especialista em vendas e sucesso do cliente",
+    tag: "Humana de vendas e CS",
+    title: "Vendas e sucesso do cliente",
     items: ["Atua junto com a IA para potencializar", "Converte leads e fideliza pacientes", "Cuida de cada paciente com atenção"],
     tone: "human",
   },
@@ -119,7 +119,7 @@ export function Team() {
           })}
         </Grid>
         <Note>
-          <strong>A IA não fica sozinha.</strong> Cada clínica tem um humano dedicado, e é essa combinação que transforma tecnologia em resultado.
+          <strong>A IA não fica sozinha.</strong> Cada clínica tem uma humana de vendas e sucesso do cliente e uma humana de estratégia, e é essa combinação que transforma tecnologia em resultado.
         </Note>
       </Container>
     </Section>

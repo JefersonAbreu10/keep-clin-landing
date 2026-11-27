@@ -91,7 +91,7 @@ export function ContractMetrics() {
         <Bottom>
           <Stamp><FiFileText aria-hidden /> DEFINIDO EM CONTRATO</Stamp>
           <Promise>
-            <strong>Garantia de resultado:</strong> é o nosso compromisso com a sua clínica, por escrito.
+            <strong>Garantia de resultado:</strong> se uma meta do contrato não for atingida, o valor é descontado da nossa comissão.
           </Promise>
         </Bottom>
       </Container>

@@ -8,11 +8,11 @@ import { Container, Section, Eyebrow, H2, SectionHead } from "./ui";
 const faqs = [
   {
     q: "O que é uma clínica AI-First?",
-    a: "É uma clínica que coloca a inteligência artificial no centro da operação: ela atende, automatiza processos e organiza as informações. Mas a experiência continua humanizada, porque sempre há um humano dedicado à sua clínica.",
+    a: "É uma clínica que coloca a inteligência artificial no centro da operação: ela atende, automatiza processos e organiza as informações. Mas a experiência continua humanizada, porque sua clínica conta com duas humanas dedicadas.",
   },
   {
     q: "A IA trabalha sozinha?",
-    a: "Não. A IA nunca fica sozinha. Uma humana especialista em vendas e sucesso do cliente atua junto com ela, e outra humana cuida da estratégia, cria os planos de ação e busca soluções para aumentar os lucros.",
+    a: "Não. A IA nunca fica sozinha. Uma humana de vendas e sucesso do cliente atua junto com ela, e uma humana de estratégia cria os planos de ação e busca soluções para aumentar os lucros.",
   },
   {
     q: "Essa equipe é funcionária da minha clínica?",
@@ -20,15 +20,19 @@ const faqs = [
   },
   {
     q: "Quanto custa?",
-    a: "O modelo é 100% comissionado: nós lucramos quando a sua clínica prospera, e damos garantia de resultado. Fale com a gente pelo WhatsApp para receber a proposta ideal para a sua clínica.",
+    a: "O modelo é 100% comissionado: nós lucramos quando a sua clínica prospera. A comissão é definida após uma análise gratuita da clínica, e a proposta é personalizada. Fale com a gente pelo WhatsApp para começar.",
+  },
+  {
+    q: "Como funciona a garantia de resultado?",
+    a: "As metas ficam definidas em contrato. Se uma meta do contrato não for atingida, o valor é descontado da nossa comissão. Ou seja, a Keep Clin só ganha quando a sua clínica ganha.",
   },
   {
     q: "O que são as metas definidas em contrato?",
-    a: "São 12 indicadores, como tempo de resposta, conversão de conversas em consultas, faltas, satisfação e retorno dos pacientes. Eles ficam no contrato: é o nosso compromisso, por escrito.",
+    a: "São 12 indicadores, como tempo de resposta, conversão de conversas em consultas, faltas, satisfação e retorno dos pacientes. Eles ficam no contrato, e se uma meta não for atingida, o valor é descontado da nossa comissão.",
   },
   {
     q: "O atendimento funciona 24 horas?",
-    a: "Sim. A sua clínica responde 24 horas, 7 dias por semana: a inteligência artificial garante a resposta rápida, e a humana dedicada continua o atendimento com o toque humano.",
+    a: "Sim. A sua clínica responde 24 horas, 7 dias por semana: a inteligência artificial garante a resposta rápida, e a humana de vendas continua o atendimento com o toque humano.",
   },
   {
     q: "O que exatamente é automatizado?",

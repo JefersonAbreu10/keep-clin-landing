@@ -254,7 +254,7 @@ export function Hero() {
             Transforme a sua clínica em uma <span>AI-First</span>, sem perder o toque humano
           </H1>
           <Sub>
-            <strong>Inteligência artificial</strong> que atende, automatiza e organiza, com um <strong>humano dedicado à sua clínica</strong>.
+            <strong>Inteligência artificial</strong> que atende, automatiza e organiza, com <strong>duas humanas dedicadas à sua clínica</strong>: uma de vendas e sucesso do cliente e outra de estratégia.
             Mais vendas, mais retenção de pacientes e menos despesas. Nós só lucramos quando a sua clínica prospera.
           </Sub>
           <Ctas>
@@ -268,7 +268,7 @@ export function Hero() {
           <Points>
             <li>100% comissionada</li>
             <li>Garantia de resultado</li>
-            <li>IA + humano dedicado</li>
+            <li>IA + 2 humanas dedicadas</li>
           </Points>
           <Social>
             <span>Siga a Keep Clin:</span>
@@ -288,8 +288,8 @@ export function Hero() {
               style={{ objectFit: "cover", objectPosition: "center 20%" }}
             />
             <Caption>
-              <b>Um humano dedicado à sua clínica</b>
-              <span>A IA potencializa, nunca fica sozinha</span>
+              <b>Humanas dedicadas à sua clínica</b>
+              <span>Vendas, sucesso do cliente e estratégia</span>
             </Caption>
           </PhotoFrame>
           <FloatCard $pos="top: 34px; left: -40px;">

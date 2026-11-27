@@ -1,21 +1,23 @@
 "use client";
 
 import styled from "styled-components";
-import { FiDollarSign, FiTrendingUp, FiSmile, FiShield } from "react-icons/fi";
+import { FiDollarSign, FiTrendingUp, FiTrendingDown, FiSmile, FiShield, FiHeart } from "react-icons/fi";
 import { Container, Section, Eyebrow, H2, Lead, SectionHead } from "./ui";
 
 const items = [
   { Icon: FiDollarSign, title: "100% comissionado", text: "Lucramos quando a sua clínica prospera." },
-  { Icon: FiShield, title: "Garantia de resultado", text: "12 indicadores e o nosso compromisso, por escrito em contrato." },
-  { Icon: FiSmile, title: "Experiência humanizada", text: "Um humano dedicado à sua clínica, com a IA potencializando." },
-  { Icon: FiTrendingUp, title: "Menos despesas, mais lucro", text: "Automação e estratégia para gastar menos e vender mais." },
+  { Icon: FiShield, title: "Garantia de resultado", text: "Se uma meta do contrato não for atingida, o valor é descontado da nossa comissão." },
+  { Icon: FiSmile, title: "Experiência humanizada", text: "Duas humanas dedicadas à sua clínica, com a IA potencializando." },
+  { Icon: FiHeart, title: "Melhor relacionamento com o cliente", text: "Cada paciente acompanhado de perto, no momento certo, para fidelizar." },
+  { Icon: FiTrendingUp, title: "Mais vendas e retenção", text: "Mais consultas, menos faltas e pacientes que voltam." },
+  { Icon: FiTrendingDown, title: "Menos despesas, mais lucro", text: "Automação e estratégia para gastar menos e vender mais." },
 ];
 
 const Grid = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  ${({ theme }) => theme.bp.lg} { grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  ${({ theme }) => theme.bp.lg} { grid-template-columns: repeat(3, 1fr); gap: 18px; }
   li {
     padding: 16px 14px;
     border-radius: 18px;

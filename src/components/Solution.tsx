@@ -9,8 +9,8 @@ import { Container, Section, Eyebrow, H2, Lead, SectionHead, GradText } from "./
 const pillars = [
   {
     Icon: FiUserCheck,
-    title: "Um humano dedicado à sua clínica",
-    text: "Especialista em vendas e sucesso do cliente, atuando junto com a IA. Você não contrata nem treina.",
+    title: "Duas humanas dedicadas à sua clínica",
+    text: "Uma de vendas e sucesso do cliente e outra de estratégia, atuando junto com a IA. Você não contrata nem treina.",
     img: asset("/img/atendente.webp"),
     alt: "Especialista da Keep Clin sorrindo com headset em um escritório moderno",
   },
@@ -124,7 +124,7 @@ export function Solution() {
             </Card>
           ))}
         </Cards>
-        <Banner>A IA nunca fica sozinha: sempre há um humano dedicado à sua clínica.</Banner>
+        <Banner>A IA nunca fica sozinha: sua clínica tem sempre duas humanas dedicadas.</Banner>
       </Container>
     </Section>
   );

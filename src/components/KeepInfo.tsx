@@ -271,7 +271,7 @@ export function KeepInfo() {
         <H2>Clínica <em>AI-First</em>, com cuidado humano</H2>
         <P>
           A Keep Clin transforma a sua clínica em uma <b>AI-First</b> sem perder a experiência humanizada.
-          Um <b>humano dedicado</b> atua com a IA, o modelo é <b>100% comissionado</b> e damos <b>garantia de resultado</b>.
+          <b>Duas humanas dedicadas</b> (vendas e sucesso do cliente, e estratégia) atuam com a IA, o modelo é <b>100% comissionado</b> e damos <b>garantia de resultado</b>: se uma meta do contrato não for atingida, o valor é descontado da nossa comissão.
         </P>
       </Section>
 
@@ -298,7 +298,7 @@ export function KeepInfo() {
           <Badge><FiClock /></Badge>
           <RowTxt>
             <b>24 horas, 7 dias por semana</b>
-            A IA garante a resposta rápida a qualquer hora, e a humana dedicada continua o atendimento com o toque humano.
+            A IA garante a resposta rápida a qualquer hora, e a humana de vendas continua o atendimento com o toque humano.
           </RowTxt>
         </Row>
       </Section>

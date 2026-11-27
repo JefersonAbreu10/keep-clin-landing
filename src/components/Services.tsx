@@ -7,7 +7,7 @@ import {
 import { Container, Section, Eyebrow, H2, Lead, SectionHead } from "./ui";
 
 const services = [
-  { Icon: FiPhoneCall, title: "WhatsApp e Instagram", text: "Atendimento automatizado com IA e a humana assumindo quando importa." },
+  { Icon: FiPhoneCall, title: "WhatsApp e Instagram", text: "Atendimento automatizado com IA e a humana de vendas assumindo quando importa." },
   { Icon: FiRepeat, title: "Processos e rotinas", text: "Cadastros, confirmações e rotinas automatizadas." },
   { Icon: FiSmartphone, title: "Aplicativo e CRM", text: "Criamos aplicativos, CRM e tecnologias para modernizar a clínica." },
   { Icon: FiCalendar, title: "Agenda e confirmações", text: "Agendamentos e lembretes para reduzir faltas." },

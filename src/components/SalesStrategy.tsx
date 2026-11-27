@@ -7,7 +7,7 @@ import { Container, Section, Eyebrow, H2, Lead, SectionHead, GradText } from "./
 /* Estratégia de vendas e retenção: do contato ao paciente fiel, com a métrica que acompanha cada etapa. */
 const etapas = [
   { n: "1", t: "Atrair", d: "Instagram e WhatsApp organizados para gerar contatos.", m: "Contatos novos" },
-  { n: "2", t: "Responder", d: "IA responde na hora e a humana assume quando importa.", m: "Tempo de resposta" },
+  { n: "2", t: "Responder", d: "A IA responde na hora e a humana de vendas assume quando importa.", m: "Tempo de resposta" },
   { n: "3", t: "Agendar", d: "Etapa de vendas consultiva com SPIN para virar consulta.", m: "Conversão em consulta" },
   { n: "4", t: "Comparecer", d: "Confirmações e lembretes para reduzir faltas.", m: "Show rate e no-show" },
   { n: "5", t: "Fidelizar", d: "Farol do paciente e contato no momento certo.", m: "Retorno e NPS" },
@@ -99,7 +99,7 @@ export function SalesStrategy() {
           <span className="ic"><FiShield aria-hidden /></span>
           <div>
             <b>100% comissionado e com garantia de resultado</b>
-            <span>Nós lucramos quando a sua clínica prospera. Os resultados e as metas ficam definidos em contrato.</span>
+            <span>Nós lucramos quando a sua clínica prospera. Se uma meta do contrato não for atingida, o valor é descontado da nossa comissão.</span>
           </div>
         </Guarantee>
       </Container>
