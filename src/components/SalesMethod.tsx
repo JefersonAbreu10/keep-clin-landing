@@ -89,7 +89,7 @@ export function SalesMethod() {
       <Container>
         <SectionHead>
           <Eyebrow>Vendas consultivas</Eyebrow>
-          <H2 id="metodo-titulo">Nossa etapa de vendas usa o <GradText>método SPIN</GradText></H2>
+          <H2 id="metodo-titulo">Usamos o <GradText>método SPIN</GradText> para transformar cada lead em paciente</H2>
           <Lead>Quatro perguntas que revelam o que o paciente precisa. Primeiro entendemos, depois apresentamos a solução.</Lead>
         </SectionHead>
         <Grid>
